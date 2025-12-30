@@ -1,0 +1,185 @@
+
+/* feature section  */
+.feature-properties {
+    padding: 40px 0px;
+}
+.feature-properties .feature-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 30px;
+}
+
+.title-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+ .subtitle {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.title {
+    color: var(--text-color);
+    font-size: clamp(1.3em, 3vw, 3rem);
+}
+
+.feature-properties .feature-container .content-container {
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-menu .feature-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-menu .feature-menu-list li {
+    list-style: none;
+    padding: 10px;
+}
+
+.feature-menu .feature-menu-list li button {
+    padding: 10px 20px;
+    background: var(--light-color);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.feature-menu .feature-menu-list li button.active {
+   background: var(--primary-color);
+   color: var(--light-color);
+}
+.feature-menu .feature-menu-list li button:hover {
+   background: var(--primary-color);
+   color: var(--light-color);
+}
+.featurecontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.productcard{
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--light-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: var(--light-background);
+    cursor: pointer;
+    position: relative;
+}
+.productcard .imagecontainer{
+    width: 100%;
+    height: 100%;  
+    overflow: hidden;
+}
+.productcard .imagecontainer img{
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+}
+
+
+
+.imagecontainer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.2;
+ }
+
+
+
+
+.textcontainer{
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  gap :10px ;
+}
+
+.productcard:hover .textcontainer h3{
+    transition: all 0.3s linear;
+}
+.productcard:hover .textcontainer h3{
+    font-size: 18px;
+    color: var(--primary-color);
+}
+.productlist{
+    display: flex;
+    gap :20px
+    
+}
+.productlist li{
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(49, 49, 49);
+}
+.productlist svg{
+    width: 20px;
+    height: 20px;
+    color: rgb(49, 49, 49);
+}
+
+.pricecontainer{
+    padding: 10px 5px;
+    display: flex;
+    justify-content: end;
+    font-size: 16px;
+    border: 1px solid var(--light-color);
+}
+
+
+.feature-tab {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.feature-menu-list button.active {
+    background: var(--primary-color);
+    color: var(--light-color);
+}
+  
+.feature-tab {
+    display: none;
+
+}
+
+.feature-tab.active {
+    display: block;
+}
+
+.feature-menu-list button.active {
+    background-color: #e63946;
+    color: white;
+}
